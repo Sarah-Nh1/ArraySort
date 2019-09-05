@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>sort arrays</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1> IS IT EVEN, ODD  OR A CHARACTER?</h1>
+
+    <script>
+    
+function Grouparray()
+{
+   
+    while(count <= evry.length)
+{
+    console.log(evry[count]);
+    if(evry[count]%2 ==0)
+        {
+            evens.push(evry[count]);
+        }
+     else if(evry[count]%2 != 0)
+        {
+            odds.push(evry[count]);
+        }
+    /*else
+        {
+            chars.push(evry[count]);
+        }*/
+    count++;
+}
+//var w = {"Evens": evens.sort()};
+//console.log(w);//desired output is either this
+//var y = {"Odds": odds.sort()};
+//console.log(y);
+//var z = {"Characters": chars.sort()};
+//console.log(z);
+console.log("Evens : " + "[" + evens.sort() + "]");//or this
+console.log("Odds : " + "[" + odds.sort() + "]");
+console.log("Reverse odds : " + "[" + odds.reverse() + "]");
+}
+
+function sort()
+{
+    compare (a, b)
+     {return a - b}
+}
+
+var evry = [2,0,6,5,1,7,"z","a"];//array for testing
+console.log(evry);//check if array is recognised
+console.log(evry.length);//remove this and above later
+
+var count = 0;
+//var chars = [];
+var evens = [];
+var odds = [];
+
+Grouparray();
+   
+</script>
+</body>
+</html>
