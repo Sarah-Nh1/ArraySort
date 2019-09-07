@@ -14,19 +14,19 @@ function Grouparray()
    
     while(count <= evry.length)
 {
-    console.log(evry[count]);
+    
     if(evry[count]%2 ==0)
         {
             evens.push(evry[count]);
         }
-     else if(evry[count]%2 != 0)
+     else if(evry[count]%2 == 1)
         {
             odds.push(evry[count]);
         }
-    /*else
+     else
         {
             chars.push(evry[count]);
-        }*/
+        }
     count++;
 }
 //var w = {"Evens": evens.sort()};
@@ -37,7 +37,7 @@ function Grouparray()
 //console.log(z);
 console.log("Evens : " + "[" + evens.sort() + "]");//or this
 console.log("Odds : " + "[" + odds.sort() + "]");
-console.log("Reverse odds : " + "[" + odds.reverse() + "]");
+console.log("Characters : " + "[" + chars.sort() + "]");
 }
 
 function sort()
@@ -46,12 +46,16 @@ function sort()
      {return a - b}
 }
 
-var evry = [2,0,6,5,1,7,"z","a"];//array for testing
+var evry = [51,21,18,84,88,16,33,"n","s","m","z"];
+/*var evry = [5123,2146,1835,8412,8815,1656,3378,"t","b","d","p"];
+var evry = [2,0,6,5,1,7,"z","a"];        //test arrays
+var evry = [3,4,7,89,34,56,2,1,"q","r","w","c"];*/
+
 console.log(evry);//check if array is recognised
-console.log(evry.length);//remove this and above later
+
 
 var count = 0;
-//var chars = [];
+var chars = [];
 var evens = [];
 var odds = [];
 
